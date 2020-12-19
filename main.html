@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fera Lanches</title>
+			<link rel="stylesheet" href="style.css">
+			<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+	<body>
+		<header class="header">
+			<img src="./images/logo.png" alt="logo">
+			<span>O melhor Lanche de belém</span>
+			<div class="finalizar-compra">
+				<button type="button" onclick="finalizar()">Finalizar Compra</button>
+			</div>
+		</header>
+		<div class="aboutus">
+			<div class="aboutus-image">
+				<img src="./images/undraw_eating_together_tjhx.svg" alt="image">
+			</div>
+			<div class="aboutus-message">
+				<h3>Sobre o Fera Lanches</h3>
+				<span>Lorem ipsum eros sit lacinia dolor aenean vulputate facilisis dui, dictum ultricies habitasse inceptos interdum enim donec lectus ornare, porta sodales accumsan morbi integer hendrerit at arcu. erat tempus sapien potenti egestas himenaeos gravida platea phasellus iaculis justo, dapibus sagittis ullamcorper placerat euismod sem posuere quisque fringilla nam phasellus, feugiat sollicitudin dictumst viverra ornare augue potenti velit mauris. eget quisque varius venenatis tempor augue mauris eget quam quis, ultrices quisque sagittis a vulputate et consequat fringilla, dictum quisque elit taciti curabitur sodales tempus potenti. fusce aliquam nunc per viverra tellus, rhoncus erat quis hac fames suscipit, curabitur pretium lobortis nibh. </span>
+			</div>
+		</div>
+		<nav class="produtos-comidas">
+			<div class="card">
+				<img src="./images/hamburguer.jpg" alt="hamburguer">
+				<span>Hamburguer</span>
+				<span>Preço: R$16,00</span>
+				<input type="button" value="Adicionar ao carrinho" onclick="preco('Hamburguer');produtos(16)">
+			</div>
+			<div class="card">
+				<img src="./images/batatafrita.jpg" alt="batata frita">
+				<span>Batata Frita</span>
+				<span>Preço: R$12,00</span>
+				<input type="button" value="Adicionar ao carrinho" onclick="preco('Batata Frita');produtos(12)">
+			</div>
+			<div class="card">
+				<img src="./images/pizza.jpg" alt="pizza">
+				<span>Pizza</span>
+				<span>Preço: R$28,00</span>
+				<select name="Sabor" id="">
+					<option value="0">Escolha o sabor</option>
+					<option value="1">Mussarela</option>
+					<option value="2">Calabresa</option>
+					<option value="3">Portuguesa</option>
+				</select>
+				<input type="button" value="Adicionar ao carrinho" onclick="preco('Pizza');produtos(28)">
+			</div>
+		</nav>
+		<nav class="produtos-bebidas">
+			<div class="card">
+				<img src="./images/coca cola.jpg" alt="hamburguer">
+				<span>Coca Cola</span>
+				<span>Preço: R$8,00</span>
+				<input type="button" value="Adicionar ao carrinho" onclick="preco('Coca Cola');produtos(8)">
+			</div>
+			<div class="card">
+				<img src="./images/guarana.jpg" alt="batata frita">
+				<span>Guaraná Antártica</span>
+				<span>Preço: R$9,00</span>
+				<input type="button" value="Adicionar ao carrinho" onclick="preco('Guaraná Antártica');produtos(9)">
+			</div>
+		</nav>
+		<script src= cardapio.js type="text/javascript"></script>
+	</body>
+
+</html>
